@@ -48,7 +48,7 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
 
             <div className={classes.socialLinks}>
               {navItems.map(item => {
-                const icon = ''
+                const icon = item?.link?.icon as Media
 
                 return (
                   <Button
@@ -59,7 +59,7 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
                     className={classes.socialLinkItem}
                   >
                     <Image
-                      src={icon}
+                      src={icon?.url}
                       alt={item.link.label}
                       width={24}
                       height={24}
