@@ -14,6 +14,7 @@ import { Gutter } from '../../_components/Gutter'
 
 import classes from './index.module.scss'
 import Categories from '../../_components/Categories'
+import Promotions from '../../_components/Promotions'
 
 export default async function Page({ params: { slug = 'home' } }) {
   const { isEnabled: isDraftMode } = draftMode()
@@ -56,6 +57,7 @@ export default async function Page({ params: { slug = 'home' } }) {
 
           <Gutter className={classes.home}>
             <Categories categories={categories} />
+            <Promotions />
           </Gutter>
         </section>
       ) : (
