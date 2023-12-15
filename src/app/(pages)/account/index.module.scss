@@ -33,9 +33,15 @@
 .navItem {
   display: flex;
   gap: 12px;
+  color: rgb(255, 0, 187);
   padding: 20px;
 }
 
+.navItem :hover {
+    background-color: aquamarine;
+    padding:10px;
+    border-radius: 10px;
+}
 .personalInfo {
   margin-bottom: 30px;
 }
